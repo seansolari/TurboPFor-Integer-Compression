@@ -145,9 +145,9 @@ libic.so : $(LIB)
 
 install: libic.a
 	install -d $(DESTDIR)$(DIRLIB)/
-    install -m 644 libic.a $(DESTDIR)$(DIRLIB)/lib/
-    install -d $(DESTDIR)$(DIRINC)/
-    install -m 644 include/ic.h $(DESTDIR)$(DIRINC)/
+	install -m 644 libic.a $(DESTDIR)$(DIRLIB)/lib/
+	install -d $(DESTDIR)$(DIRINC)/
+	install -m 644 include/ic.h $(DESTDIR)$(DIRINC)/
 	install -m 644 include/ic_.h $(DESTDIR)$(DIRINC)/
 
 JAVA_SUBDIR = java
