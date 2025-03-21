@@ -95,7 +95,7 @@ CFLAGS+=-D_STATIC
 LDFLAGS+=-static
 endif
 
-all: icapp 
+all: libic.a 
 
 $(SRC)bitutil_avx2.o: $(SRC)bitutil.c
 	$(CC) -O3 -w $(_AVX2) $(OPT) -c $(SRC)bitutil.c -o $(SRC)bitutil_avx2.o
